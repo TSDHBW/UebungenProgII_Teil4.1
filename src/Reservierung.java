@@ -5,7 +5,7 @@ public class Reservierung {
     public int id;
     public boolean bestätigt = false;
 
-    public boolean anpassen (String datum, String uhrzeit){
+    public boolean passeReservierungAn (String datum, String uhrzeit){
 
         return true;
 
