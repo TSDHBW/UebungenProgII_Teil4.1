@@ -12,7 +12,7 @@ public class Bestellung {
         this.fleischGericht = fleischGericht;
         this.pastaGericht = pastaGericht;
         this.cocktails = cocktails;
-        this.limonaden = limonaden1;
+        this.limonaden = limonaden;
 
     }
 
