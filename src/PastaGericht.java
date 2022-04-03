@@ -1,13 +1,13 @@
 public class PastaGericht extends BasisRezeptEssen {
 
-    String nudelsorte;
-    boolean vorspeise;
+    private String nudelsorte;
+    private boolean vorspeise;
 
-    public PastaGericht(String nudelsorte, boolean vorspeise, String name){
+    public PastaGericht (String name, Zutat[]zutaten, boolean vegetarisch, boolean vegan, String nudelsorte, boolean vorspeise){
 
+        super(name, zutaten, vegetarisch, vegan);
         this.nudelsorte = nudelsorte;
         this.vorspeise = vorspeise;
-        this.name = name;
 
     }
 
@@ -15,6 +15,22 @@ public class PastaGericht extends BasisRezeptEssen {
 
         return true;
 
+    }
+
+    public String getNudelsorte() {
+        return nudelsorte;
+    }
+
+    public void setNudelsorte(String nudelsorte) {
+        this.nudelsorte = nudelsorte;
+    }
+
+    public boolean isVorspeise() {
+        return vorspeise;
+    }
+
+    public void setVorspeise(boolean vorspeise) {
+        this.vorspeise = vorspeise;
     }
 
 }
