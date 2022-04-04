@@ -1,3 +1,9 @@
+/**
+ * Klasse zur Generierung von Objekten für Bestellungen. Eine Bestellung enthält ein Fleisch- und Pastagericht und beliebig viele Cocktails und Limonaden.
+ * Zusätzlich wird in jedem Bestllung-Objekt der Kunde gespeichert, der die Bestellung aufgegeben hat.
+ * @author Timo
+ * @version 1
+ */
 public class Bestellung {
 
     private Kunde kunde;
@@ -13,6 +19,10 @@ public class Bestellung {
         this.pastaGericht = pastaGericht;
         this.cocktails = cocktails;
         this.limonaden = limonaden;
+
+    }
+
+    public Bestellung() {
 
     }
 

@@ -1,3 +1,9 @@
+/**
+ * Klasse zur Generierung eines Objekts für die Rezeptverwaltung. Jede Rezeptverwaltung besitzt je ein Array für Rezepte für Pastagerichte, Fleischgerichte,
+ * COcktais und Limonaden
+ * @author Timo
+ * @version 1
+ */
 public class Rezeptverwaltung {
 
     private PastaGericht[] pastaRezepte;
