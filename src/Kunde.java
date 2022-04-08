@@ -1,8 +1,3 @@
-/**
- * @author Timo
- * @version 1
- */
-
 public class Kunde {
 
     private String name;

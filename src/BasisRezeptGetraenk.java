@@ -1,4 +1,4 @@
-public class BasisRezeptGetraenk extends BasisRezept {
+public abstract class BasisRezeptGetraenk extends BasisRezept {
 
     private boolean heißGetraenk;
     private boolean zuckerfrei;
