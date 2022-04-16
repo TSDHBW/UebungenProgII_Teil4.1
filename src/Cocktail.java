@@ -25,7 +25,7 @@ public class Cocktail extends BasisRezeptGetraenk {
         this.alkohlgehalt = alkohlgehalt;
     }
 
-    public boolean isAlkohlfrei() {
+    public boolean getAlkohlfrei() {
         return alkohlfrei;
     }
 
