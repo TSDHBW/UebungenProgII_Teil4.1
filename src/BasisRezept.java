@@ -3,13 +3,6 @@ public abstract class BasisRezept {
     private String name;
     private Zutat[] zutaten;
 
-    public BasisRezept(String name, Zutat[]zutaten){
-
-        this.name = name;
-        this.zutaten = zutaten;
-
-    }
-
     public void zubereiten (int anzahlPortionen){
 
     }
