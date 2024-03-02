@@ -4,6 +4,14 @@ public class Kunde {
     private String adresse;
     private Reservierung[] reservierungen;
 
+    public Kunde (String name, String adresse, Reservierung[] reservierungen){
+
+        this.name = name;
+        this.adresse = adresse;
+        this.reservierungen = reservierungen;
+
+    }
+
     public void sendeGutschein (double hoehe){
 
     }

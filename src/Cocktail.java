@@ -3,6 +3,14 @@ public class Cocktail extends BasisRezeptGetraenk {
     private int alkohlgehalt;
     private boolean alkohlfrei;
 
+    public Cocktail(String name, Zutat[]zutaten, boolean heißGetraenk, boolean zuckerfrei, int alkohlgehalt, boolean alkohlfrei){
+
+        super(name, zutaten, heißGetraenk, zuckerfrei);
+        this.alkohlgehalt = alkohlgehalt;
+        this.alkohlfrei = alkohlfrei;
+
+    }
+
     public String glasMitKundeAbstimmen() {
 
         return "";

@@ -5,6 +5,14 @@ public class Reservierung {
     private int id;
     private boolean bestaetigt = false;
 
+    public Reservierung (String datum, String uhrzeit, int id){
+
+        this.datum = datum;
+        this.uhrzeit = uhrzeit;
+        this.id = id;
+
+    }
+
     public boolean passeReservierungAn (String datum, String uhrzeit){
 
         return true;

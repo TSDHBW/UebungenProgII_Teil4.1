@@ -11,6 +11,15 @@ public class Rezeptverwaltung {
     private Cocktail[] cocktailRezepte;
     private Limonade[] limonadeRezepte;
 
+    public Rezeptverwaltung (){
+
+        pastaRezepte = new PastaGericht[1000];
+        fleischRezepte = new FleischGericht[1000];
+        cocktailRezepte = new Cocktail[1000];
+        limonadeRezepte = new Limonade[1000];
+
+    }
+
     public int ermittleAnzahlRezepte (String art){
 
         return 0;

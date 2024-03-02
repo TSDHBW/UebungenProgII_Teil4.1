@@ -12,7 +12,13 @@ public class Bestellung {
     private Cocktail[] cocktails;
     private Limonade[] limonaden;
 
-    public Bestellung() {
+    public Bestellung(Kunde kunde, FleischGericht fleischGericht, PastaGericht pastaGericht, Cocktail[] cocktails, Limonade[] limonaden){
+
+        this.kunde = kunde;
+        this.fleischGericht = fleischGericht;
+        this.pastaGericht = pastaGericht;
+        this.cocktails = cocktails;
+        this.limonaden = limonaden;
 
     }
 

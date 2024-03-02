@@ -3,6 +3,13 @@ public class Kundenverwaltung {
     private Kunde[] kunden;
     private int index;
 
+    public Kundenverwaltung (Kunde[]kunden){
+
+        this.kunden = kunden;
+        index = 1;
+
+    }
+
     public void nehmeKundeAuf (Kunde kunde) {
 
     }
