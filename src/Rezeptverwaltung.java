@@ -6,18 +6,50 @@
  */
 public class Rezeptverwaltung {
 
-    private PastaGericht[] pastaRezepte;
-    private FleischGericht[] fleischRezepte;
-    private Cocktail[] cocktailRezepte;
-    private Limonade[] limonadeRezepte;
+    private BasisRezept[] rezepte;
 
     public Rezeptverwaltung (){
 
-        pastaRezepte = new PastaGericht[1000];
-        fleischRezepte = new FleischGericht[1000];
-        cocktailRezepte = new Cocktail[1000];
-        limonadeRezepte = new Limonade[1000];
+        rezepte = new BasisRezept[1000];
 
+    }
+
+    public void nehmeRezeptAuf (BasisRezept rezept){
+
+        boolean aktualisiert = false;
+        for (int i = 0; i < rezepte.length; i++){
+
+            if (rezepte[i] != null){
+
+                if (rezepte[i].getName().equals(rezept.getName()) && rezepte[i].getTyp().equals(rezept.getTyp())){
+
+                    System.out.println("Rezept aktualisiert");
+                    rezepte[i] = rezept;
+                    aktualisiert = true;
+                    break;
+
+                }
+            }
+        }
+
+        if (aktualisiert == false){
+
+            for (int i = 0; i < rezepte.length; i++){
+
+                if (rezepte[i] == null){
+
+                    // Hinzufügen von Rezept
+                    rezepte[i] = rezept;
+                    System.out.println("Rezept aufgenommen");
+                    break;
+
+                }
+            }
+        } else {
+
+            System.out.println("Rezept nicht aufgenommen, Rezeptverwaltung ist voll");
+
+        }
     }
 
     public int ermittleAnzahlRezepte (String art){
@@ -34,36 +66,11 @@ public class Rezeptverwaltung {
 
     }
 
-    public PastaGericht[] getPastaRezepte() {
-        return pastaRezepte;
+    public BasisRezept[] getRezepte() {
+        return rezepte;
     }
 
-    public void setPastaRezepte(PastaGericht[] pastaRezepte) {
-        this.pastaRezepte = pastaRezepte;
+    public void setRezepte(BasisRezept[] rezepte) {
+        this.rezepte = rezepte;
     }
-
-    public FleischGericht[] getFleischRezepte() {
-        return fleischRezepte;
-    }
-
-    public void setFleischRezepte(FleischGericht[] fleischRezepte) {
-        this.fleischRezepte = fleischRezepte;
-    }
-
-    public Cocktail[] getCocktailRezepte() {
-        return cocktailRezepte;
-    }
-
-    public void setCocktailRezepte(Cocktail[] cocktailRezepte) {
-        this.cocktailRezepte = cocktailRezepte;
-    }
-
-    public Limonade[] getLimonadeRezepte() {
-        return limonadeRezepte;
-    }
-
-    public void setLimonadeRezepte(Limonade[] limonadeRezepte) {
-        this.limonadeRezepte = limonadeRezepte;
-    }
-
 }
