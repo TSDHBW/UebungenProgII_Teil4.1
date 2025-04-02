@@ -16,40 +16,7 @@ public class Rezeptverwaltung {
 
     public void nehmeRezeptAuf (BasisRezept rezept){
 
-        boolean aktualisiert = false;
-        for (int i = 0; i < rezepte.length; i++){
-
-            if (rezepte[i] != null){
-
-                if (rezepte[i].getName().equals(rezept.getName()) && rezepte[i].getTyp().equals(rezept.getTyp())){
-
-                    System.out.println("Rezept aktualisiert");
-                    rezepte[i] = rezept;
-                    aktualisiert = true;
-                    break;
-
-                }
-            }
-        }
-
-        if (aktualisiert == false){
-
-            for (int i = 0; i < rezepte.length; i++){
-
-                if (rezepte[i] == null){
-
-                    // Hinzufügen von Rezept
-                    rezepte[i] = rezept;
-                    System.out.println("Rezept aufgenommen");
-                    break;
-
-                }
-            }
-        } else {
-
-            System.out.println("Rezept nicht aufgenommen, Rezeptverwaltung ist voll");
-
-        }
+        
     }
 
     public int ermittleAnzahlRezepte (String art){
